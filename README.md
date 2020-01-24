@@ -12,5 +12,6 @@ Take a word, split it into chars, make a directory tree char by char, at the end
 Similar to test 2, we take our word and make a sha. We split it into individual chars, make a directory tree char by char, at the end of sha create metadata of the whole sha and save as data. For a fast and efficient lookup table we avoid data duplication as each sha is unique to the data within and therefore creates unique directory paths that have no duplication of data. This black-box method of information storage and retreaval allows us to store similar messages such as 'hello' and 'hello there' in the same space without loosing the individualism and integrity of the messages and their hashes.
 
 # Test4
+The profoundness of entropy vs simple brute forcing. It is quite pointless trying to make every possible combination of a unknown using hex based notation. The amount of time needed on this computer to generate every possible combination is longer than the all of the time in the Universe and beyond. However considering, if we used the letters a to z and space, recursively over time we would brute force everything ever written by man in the output. A thought experiment indeed. This program, although logically sound simply proves the futality to brute forcing sha hashes. Enjoy.
 
 Cheers o7
