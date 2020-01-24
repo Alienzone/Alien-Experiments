@@ -1,20 +1,4 @@
 #!/usr/bin/perl
-######################################################
-### HOW MANY ITERATIONS OF SHA ON SHA DOES IT      ###
-### TAKE TO CHANGE A LIGHTBULB?                    ###
-### THE LIGHTBULB BEING A TRIGGER WORD THAT THE    ###
-### SHA MUST CONTAIN. CONSIDER IT A PROOF OF WORK. ###
-### WE MAKE A 64BYTE RANDOM NUMBER AND SHA IT.     ###
-### WE TAKE A SHA OF THE SHA UNTIL IT MATCHES      ###
-### THE LIGHTBULB. WE COUNT HOW MANY TIMES ROUND   ###
-### AND THE TIME TAKEN TO MAKE MATCHES.            ###
-### WHEN THE COUNT == 1 WE STOP AND RECORD THE     ###
-### SHAS AND SEED DATA.                            ###
-### WE DISCOVER THAT SINGLE STEP MATCHES ARE A     ###
-### DIRECT RESULT OF THE SEED DATA MEANING THAT    ###
-### SEED DATA WILL ALWAYS PRODUCE A SHA CONTAINING ###
-### THE LIGHTBULB. PRETTY NEAT EXPERIMENT IN PERL. ###
-######################################################
 use Digest::SHA qw (sha256_hex);
 
 ### TRIGGERWORD
