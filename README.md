@@ -37,6 +37,19 @@ allowed in a single filesystem quite quickly.
 Great fun.
 
 # Test3
+Similar to test 2, we take our word and make a sha.
+We split it into individual chars, make a directory
+tree char by char, at the end of sha create metadata
+of the whole sha and save as data.
+For a fast and efficient lookup table we avoid data
+duplication as each sha is unique to the data within
+and therefore creates unique directory paths that
+have no duplication of data.
+This black-box method of information storage and
+retreaval allows us to store similar messages such
+as 'hello' and 'hello there' in the same space without
+loosing the individualism and integrity of the messages
+and their hashes.
 
 # Test4
 
